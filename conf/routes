@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-
+GET     /ie                         controllers.Application.ie()
+GET     /ff                        controllers.Application.ff()
+GET     /chrome                         controllers.Application.chrome()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

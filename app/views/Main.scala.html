@@ -28,14 +28,14 @@
               <!--  Display three horizontal lines when navbar collapsed. -->
             <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">A History Of Browsers</a>
+          <a class="navbar-brand">A History Of Browsers</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Introduction</a></li>
-              <li><a href="#IE">Internet Explorer</a></li>
-              <li><a href="#FF">Firefox</a></li>
-              <li><a href="#Chrome">Chrome</a></li>
+              <li class="@("active".when(page == "Home"))"><a href="@routes.Application.index()">Home</a></li>
+              <li class="@("active".when(page == "Internet Explorer"))"><a href="@routes.Application.ie()">Internet Explorer</a></li>
+              <li class="@("active".when(page == "Firefox"))"><a href="@routes.Application.ff()">Firefox</a></li>
+              <li class="@("active".when(page == "Chrome"))"><a href="@routes.Application.chrome()">Chrome</a></li>
           </ul>
         </div>
       </div>
